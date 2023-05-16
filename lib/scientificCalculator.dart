@@ -179,7 +179,6 @@ class _ScientificCalculatorState extends State<ScientificCalculator> {
         Expression exp = p.parse(expression);
         ContextModel cm = ContextModel();
         result = '${exp.evaluate(EvaluationType.REAL, cm)}';
-        if (result == 'NaN') result = CALCULATE_ERROR;
         _isIntResult();
       } catch (e) {
         result = CALCULATE_ERROR;
@@ -217,14 +216,13 @@ class _ScientificCalculatorState extends State<ScientificCalculator> {
       expression = expression.replaceAll(ARCSIN_SIGN, 'arcsin');
       expression = expression.replaceAll(ARCCOS_SIGN, 'arccos');
       expression = expression.replaceAll(ARCTAN_SIGN, 'arctan');
-      expression = expression.replaceAll(LG_SIGN, 'Log');
+      expression = expression.replaceAll(LG_SIGN, 'log');
       expression = expression.replaceAll(' mód ', MODULAR_SIGN);
       try {
         Parser p = Parser();
         Expression exp = p.parse(expression);
         ContextModel cm = ContextModel();
         result = '${exp.evaluate(EvaluationType.REAL, cm)}';
-        if (result == 'NaN') result = CALCULATE_ERROR;
         _isIntResult();
       } catch (e) {
         result = CALCULATE_ERROR;
