@@ -72,7 +72,7 @@ class KeyboardButtons extends StatelessWidget {
                 color: (_colorTextButtons())
                     ? Colors.blueAccent
                     : (buttons == EQUAL_SIGN)
-                    ? Theme.of(context).primaryColor
+                    ? Colors.white
                     : Color(0xFF090A0A),
                 fontSize: _fontSize() ? 18 : 20.0),
           ),

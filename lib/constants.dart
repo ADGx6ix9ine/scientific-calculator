@@ -19,7 +19,7 @@ const ARCCOS_SIGN = 'acos';
 const ARCTAN_SIGN = 'atan';
 const LEFT_QUOTE_SIGN = '(';
 const RIGHT_QUOTE_SIGN = ')';
-const EQUAL_SIGN = "=";
+const EQUAL_SIGN = "\=";
 const CLEAR_ALL_SIGN = 'AC';
 const PI = 'π';
 const E_NUM = 'e';
